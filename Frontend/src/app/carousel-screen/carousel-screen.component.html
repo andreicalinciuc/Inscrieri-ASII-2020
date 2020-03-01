@@ -1,0 +1,16 @@
+<div class="carousel-animation-wrapper">
+    <div class="carousel-wrapper">
+        <igx-carousel #carousel >
+            <igx-slide *ngFor="let slide of slides;">
+                <div class="slide-wrapper">
+                    <igx-card>
+                        <igx-card-header>
+                            <h4 igxCardHeaderTitle>{{slide.title}}</h4>
+                        </igx-card-header>
+                    </igx-card>
+                </div>
+            </igx-slide>
+        </igx-carousel>
+
+    </div>
+</div> 

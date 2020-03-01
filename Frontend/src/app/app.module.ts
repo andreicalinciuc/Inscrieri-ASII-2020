@@ -1,20 +1,33 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
-
+import {
+  IgxCarouselModule,
+  IgxIconModule,
+  IgxSelectModule,
+  IgxButtonModule,
+  IgxCardModule
+ } from 'igniteui-angular';
+import {CarouselAnimationsSampleComponent} from './carousel-screen/carousel-screen.component';
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselAnimationsSampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SharedModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    IgxCarouselModule,
+    IgxIconModule,
+    IgxSelectModule,
+    IgxButtonModule,
+    IgxCardModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: []
 })
-export class AppModule { }
+export class AppModule {}

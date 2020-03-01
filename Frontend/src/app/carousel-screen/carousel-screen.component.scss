@@ -1,0 +1,14 @@
+@import '~igniteui-angular/lib/core/styles/themes/index';
+
+$theme: igx-carousel-theme(
+    $slide-background: #333,
+);
+
+:host ::ng-deep{
+    @include igx-carousel($theme);
+    height: 100%;
+    width: 100%;
+}
+
+
+
